@@ -1,0 +1,293 @@
+2014-06-21 03:45:07 Error: [PrivateActionException] Private Action CategoryRegistsController::getTestType() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'CategoryRegistsController',
+  'action' => 'getTestType',
+)
+Request URL: /CategoryRegists/getTestType
+Stack Trace:
+#0 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CategoryRegistsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\development\ikeda_php\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-21 03:46:02 Error: [MissingViewException] View file "C:\development\ikeda_php\xampp\htdocs\cakephp\app\View\CategoryRegists\get_test_type.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\development\\ikeda_php\\xampp\\htdocs\\cakephp\\app\\View\\CategoryRegists\\get_test_type.ctp',
+)
+Request URL: /CategoryRegists/getTestType
+Stack Trace:
+#0 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\View\View.php(459): View->_getViewFileName(NULL)
+#1 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CategoryRegistsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\development\ikeda_php\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-21 08:13:36 Error: Fatal Error (4): syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM) in [C:\development\ikeda_php\xampp\htdocs\cakephp\app\Controller\CategoryRegistsController.php, line 104]
+2014-06-21 08:13:36 Error: [FatalErrorException] syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM)
+Request URL: /CategoryRegists/index
+Stack Trace:
+#0 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\development\...', 104)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\development\...', 104, Array)
+#2 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\development\...', 104, Array)
+#3 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-21 08:14:32 Error: Fatal Error (1): Call to a member function debug() on a non-object in [C:\development\ikeda_php\xampp\htdocs\cakephp\app\Controller\CategoryRegistsController.php, line 104]
+2014-06-21 08:14:32 Error: [FatalErrorException] Call to a member function debug() on a non-object
+Request URL: /CategoryRegists/index
+Stack Trace:
+#0 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\development\...', 104)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\development\...', 104, Array)
+#2 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\development\...', 104, Array)
+#3 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-21 08:16:08 Error: Fatal Error (64): Cannot make static method CakeLog::debug() non static in class TestCreaterLog in [C:\development\ikeda_php\xampp\htdocs\cakephp\app\Lib\Utility\TestCreaterLog.php, line 10]
+2014-06-21 08:16:08 Error: [FatalErrorException] Cannot make static method CakeLog::debug() non static in class TestCreaterLog
+Request URL: /CategoryRegists/index
+Stack Trace:
+#0 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'Cannot make sta...', 'C:\development\...', 10)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot make sta...', 'C:\development\...', 10, Array)
+#2 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot make sta...', 'C:\development\...', 10, Array)
+#3 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-21 21:10:43 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'interface_id' cannot be null
+Request URL: /CategoryRegists/regist/type:TestType
+Stack Trace:
+#0 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `ca...')
+#3 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(1761): DboSource->create(Object(TestType), Array, Array)
+#4 C:\development\ikeda_php\xampp\htdocs\cakephp\app\Controller\CategoryRegistsController.php(88): Model->save(Array)
+#5 [internal function]: CategoryRegistsController->regist()
+#6 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoryRegistsController), Array)
+#7 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CategoryRegistsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\development\ikeda_php\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-06-21 21:12:41 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'interface_id' cannot be null
+Request URL: /CategoryRegists/regist/type:TestType
+Stack Trace:
+#0 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `ca...')
+#3 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(1761): DboSource->create(Object(TestType), Array, Array)
+#4 C:\development\ikeda_php\xampp\htdocs\cakephp\app\Controller\CategoryRegistsController.php(88): Model->save(Array)
+#5 [internal function]: CategoryRegistsController->regist()
+#6 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoryRegistsController), Array)
+#7 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CategoryRegistsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\development\ikeda_php\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-06-21 22:13:21 Error: Fatal Error (1): Call to undefined function getValue() in [C:\development\ikeda_php\xampp\htdocs\cakephp\app\Controller\CategoryRegistsController.php, line 64]
+2014-06-21 22:13:21 Error: [FatalErrorException] Call to undefined function getValue()
+Request URL: /CategoryRegists/regist/type:Interfaces
+Stack Trace:
+#0 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\development\...', 64)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\development\...', 64, Array)
+#2 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\development\...', 64, Array)
+#3 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-21 22:13:32 Error: Fatal Error (1): Call to undefined function getValue() in [C:\development\ikeda_php\xampp\htdocs\cakephp\app\Controller\CategoryRegistsController.php, line 64]
+2014-06-21 22:13:32 Error: [FatalErrorException] Call to undefined function getValue()
+Request URL: /CategoryRegists/regist/type:Interfaces
+Stack Trace:
+#0 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\development\...', 64)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\development\...', 64, Array)
+#2 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\development\...', 64, Array)
+#3 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-21 22:14:15 Error: Fatal Error (1): Class 'Fields' not found in [C:\development\ikeda_php\xampp\htdocs\cakephp\app\Controller\CategoryRegistsController.php, line 64]
+2014-06-21 22:14:15 Error: [FatalErrorException] Class 'Fields' not found
+Request URL: /CategoryRegists/regist/type:Interfaces
+Stack Trace:
+#0 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'Fields' ...', 'C:\development\...', 64)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Fields' ...', 'C:\development\...', 64, Array)
+#2 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Fields' ...', 'C:\development\...', 64, Array)
+#3 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-21 22:14:54 Error: [TestCreaterException] IF不整合:未入力エラー. --data->Array
+(
+    [name] => xfyhcgjk
+)
+
+Request URL: /CategoryRegists/regist/type:Interfaces
+Stack Trace:
+#0 [internal function]: CategoryRegistsController->regist()
+#1 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoryRegistsController), Array)
+#2 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CategoryRegistsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\development\ikeda_php\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-21 22:16:41 Error: [TestCreaterException] IF不整合:未入力エラー. --data->Array
+(
+    [name] => lk
+)
+
+Request URL: /CategoryRegists/regist/type:Interfaces
+Stack Trace:
+#0 [internal function]: CategoryRegistsController->regist()
+#1 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoryRegistsController), Array)
+#2 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CategoryRegistsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\development\ikeda_php\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-21 22:21:24 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'interface_id' in 'where clause'
+Request URL: /CategoryRegists/getTestType
+Stack Trace:
+#0 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `TestTyp...', Array)
+#2 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `TestTyp...', Array, Array)
+#3 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `TestTyp...', false)
+#4 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(2750): DboSource->read(Object(TestType), Array)
+#5 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(2722): Model->_readDataSource('first', Array)
+#6 C:\development\ikeda_php\xampp\htdocs\cakephp\app\Controller\CategoryRegistsController.php(117): Model->find('first', Array)
+#7 [internal function]: CategoryRegistsController->getTestType()
+#8 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoryRegistsController), Array)
+#9 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CategoryRegistsController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\development\ikeda_php\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-06-21 22:39:43 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'parent_id' in 'where clause'
+Request URL: /CategoryRegists/getPatternsData/type:Interfaces
+Stack Trace:
+#0 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Interfa...', Array)
+#2 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Interfa...', Array, Array)
+#3 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Interfa...', false)
+#4 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(2750): DboSource->read(Object(Interfaces), Array)
+#5 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(2722): Model->_readDataSource('first', Array)
+#6 C:\development\ikeda_php\xampp\htdocs\cakephp\app\Controller\CategoryRegistsController.php(132): Model->find('first', Array)
+#7 [internal function]: CategoryRegistsController->getPatternsData()
+#8 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoryRegistsController), Array)
+#9 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CategoryRegistsController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\development\ikeda_php\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-06-22 00:41:48 Error: [TestCreaterException] IF不整合:未入力エラー. --data->Array
+(
+    [parent_id] => 263
+    [name] => fesrdf
+)
+
+Request URL: /CategoryRegists/regist/type:TestType
+Stack Trace:
+#0 [internal function]: CategoryRegistsController->regist()
+#1 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoryRegistsController), Array)
+#2 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CategoryRegistsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\development\ikeda_php\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-22 00:45:45 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [C:\development\ikeda_php\xampp\htdocs\cakephp\app\Lib\Utility\TestCreaterLog.php, line 6]
+2014-06-22 00:45:45 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+Request URL: /CategoryRegists/index
+Stack Trace:
+#0 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Maximum functio...', 'C:\development\...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', 'C:\development\...', 6, Array)
+#2 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', 'C:\development\...', 6, Array)
+#3 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-22 00:58:18 Error: [TestCreaterException] IF不整合:未入力エラー. --key->parent_id --data->Array
+(
+    [parent_id] => 
+    [name] => jk
+)
+
+Request URL: /CategoryRegists/regist/type:Interfaces
+Stack Trace:
+#0 [internal function]: CategoryRegistsController->regist()
+#1 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoryRegistsController), Array)
+#2 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CategoryRegistsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\development\ikeda_php\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-22 01:15:34 Error: [TestCreaterException] IF不整合:未入力エラー. --key->parent_id --data->Array
+(
+    [name] => ｇｆｈｇｈ
+)
+
+Request URL: /CategoryRegists/regist/type:TestType
+Stack Trace:
+#0 [internal function]: CategoryRegistsController->regist()
+#1 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoryRegistsController), Array)
+#2 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CategoryRegistsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\development\ikeda_php\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-22 01:17:03 Error: [TestCreaterException] IF不整合:未入力エラー. --key->parent_id --data->Array
+(
+    [name] => えｒｔｊ
+)
+
+Request URL: /CategoryRegists/regist/type:TestType
+Stack Trace:
+#0 [internal function]: CategoryRegistsController->regist()
+#1 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoryRegistsController), Array)
+#2 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CategoryRegistsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\development\ikeda_php\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-22 01:27:11 Error: [TestCreaterException] IF不整合:未入力エラー. --key->parent_id --data->Array
+(
+    [name] => ｇｓｆｈｇｈｊ
+)
+
+Request URL: /CategoryRegists/regist/type:TestType
+Stack Trace:
+#0 [internal function]: CategoryRegistsController->regist()
+#1 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoryRegistsController), Array)
+#2 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CategoryRegistsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\development\ikeda_php\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-22 09:37:02 Error: [TestCreaterException] テーブル指定不正.table->undefined
+Request URL: /CategoryRegists/getPatternsData/type:undefined
+Stack Trace:
+#0 [internal function]: CategoryRegistsController->getPatternsData()
+#1 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoryRegistsController), Array)
+#2 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CategoryRegistsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\development\ikeda_php\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-22 10:09:17 Error: [TestCreaterException] テーブル指定不正.table->undefined
+Request URL: /CategoryRegists/getPatternsData/type:undefined
+Stack Trace:
+#0 [internal function]: CategoryRegistsController->getPatternsData()
+#1 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoryRegistsController), Array)
+#2 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CategoryRegistsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\development\ikeda_php\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-07-06 09:00:23 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] �Ώۂ̃R���s���[�^�[�ɂ���ċ��ۂ��ꂽ���߁A�ڑ��ł��܂���ł����B
+',
+  'enabled' => true,
+)
+Request URL: /CategoryRegists/index
+Stack Trace:
+#0 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(3310): Model->setSource('interface')
+#5 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(1401): Model->schema()
+#7 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(1389): Model->hasField('title', false)
+#8 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(878): Model->hasField(Array)
+#9 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(2905): Model->__get('displayField')
+#10 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(2782): Model->_findList('before', Array)
+#11 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(2717): Model->buildQuery('list', Array)
+#12 C:\development\ikeda_php\xampp\htdocs\cakephp\app\Controller\CategoryRegistsController.php(185): Model->find('list')
+#13 C:\development\ikeda_php\xampp\htdocs\cakephp\app\Controller\CategoryRegistsController.php(32): CategoryRegistsController->getInterfaces()
+#14 [internal function]: CategoryRegistsController->index()
+#15 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoryRegistsController), Array)
+#16 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#17 C:\development\ikeda_php\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CategoryRegistsController), Object(CakeRequest), Object(CakeResponse))
+#18 C:\development\ikeda_php\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#19 {main}
